@@ -1,0 +1,234 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    overflow: hidden;
+    background: linear-gradient(black, black);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+:root{
+    --keyColor: rgb(30, 30, 30);
+    --keyFontColor: rgb(0, 153, 255);
+    --keyTextFont: monospace;
+    --keyTextFontSize: 40px;
+    --keyRGB: var(--keyFontColor);
+}
+::-webkit-scrollbar{
+    display: none;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background-color: rgb(35, 35, 35);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+textarea{
+    user-select: none;
+    width: calc(100% - (var(--keyTextFontSize)));
+    height: 300px;
+    padding: 20px;
+    border: none;
+    outline: none;
+    background-color: #4c4c4c;
+    color: white;
+    font-size: 50px;
+    resize: none;
+    border-radius: 10px;
+}
+
+.keyboard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #131313;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.key{
+    flex-direction: column;
+    flex-grow: 0;
+    user-select: none;
+    display: flex;
+    font-size: var(--keyTextFontSize);
+    justify-content: center;
+    align-items: start;
+    font-family: var(--keyTextFont);
+    padding: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: var(--keyColor);
+    color: var(--keyFontColor);
+    border-right: 10px solid rgb(53, 53, 53);
+    border-bottom: 10px solid rgb(55, 53, 53);
+    border-left: 5px solid rgb(20, 20, 20);
+    border-top: 5px solid rgb(20, 20, 20);
+    text-shadow: 0 0 10px var(--keyRGB);
+    position: relative;
+    text-align: center;
+}
+
+.multi {
+    font-size: calc(var(--keyTextFontSize) - 50%);
+}
+
+.key{
+    
+}
+
+.acentos{
+    justify-content: start;
+}
+
+
+.spacebar{
+    flex-grow: 0;
+    user-select: none;
+    display: flex;
+    font-size: var(--keyTextFontSize);
+    justify-content: center;
+    align-items: start;
+    font-family: var(--keyTextFont);
+    padding: 20px;
+    width: 600px;
+    height: 60px;
+    background-color: var(--keyColor);
+    color: var(--keyFontColor);
+    border-right: 10px solid rgb(53, 53, 53);
+    border-bottom: 10px solid rgb(55, 53, 53);
+    border-left: 5px solid rgb(20, 20, 20);
+    border-top: 5px solid rgb(20, 20, 20);
+}
+
+.rctrl{
+    width: 16%;
+    align-items: end;
+}
+
+.windows{
+    justify-content: center;
+    align-items: center;
+}
+
+.windows > p{
+    transform: skewY(5deg) skewX(0deg);
+}
+
+.clip{
+    justify-content: start;
+    align-items: center;
+}
+
+.lctrl{
+    width: fit-content;
+    justify-content: center;  
+}
+
+.tab{
+    width: 120px;
+}
+
+.capslock{
+    width: 140px;
+    white-space: nowrap;
+    letter-spacing: -5px;
+    word-spacing: -10px;
+}
+
+.backspace{
+    width: 170px;
+    /* justify-content: end; */
+    align-items: end;
+}
+
+.enter1{
+    justify-content: center;
+    /* font-size: calc(var(--keyTextFontSize) - 10px); */
+    width: 110px;
+    border-bottom: 10px solid var(--keyColor);
+}
+.enter2{
+    width: 90px;
+    border-top: 10px solid var(--keyColor);
+}
+
+.lshift{
+
+}
+
+.rshift{
+    width: 170px;
+    justify-content: center;
+    align-items: end;
+}
+
+.left{
+    justify-content: center;
+    align-items: start;
+}
+.right{
+    justify-content: center;
+    align-items: start;
+}
+
+.altgr{
+    white-space: nowrap;
+    width: 100px;
+    letter-spacing: -5px;
+    word-spacing: -5px;
+}
+
+.key-press-animation{
+    animation: keypress 0.1s linear 2 alternate;
+}
+
+.key-press-animation-spacebar{
+    animation: keypressSpacebar 0.1s linear 2 alternate;
+}
+
+@keyframes keypress {
+   from{}
+   to{
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    border-right: 18px solid rgb(53, 53, 53);
+    border-bottom: 16px solid rgb(55, 53, 53);
+    border-left: 18px solid rgb(20, 20, 20);
+    border-top: 16px solid rgb(20, 20, 20);
+   } 
+}
+
+
+@keyframes keypressSpacebar {
+    from{}
+    to{
+     width: 580px;
+     height: 40px;
+     font-size: 20px;
+     border-right: 18px solid rgb(53, 53, 53);
+     border-bottom: 18px solid rgb(55, 53, 53);
+     border-left: 18px solid rgb(20, 20, 20);
+     border-top: 18px solid rgb(20, 20, 20);
+    } 
+}
+

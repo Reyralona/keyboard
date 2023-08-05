@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body spellcheck="false" onkeydown="keyPress(event)">
+
+    <div class="wrapper">
+        <textarea id="textarea" readonly></textarea>
+
+        <div class="keyboard">
+            <div class="row">
+                <div id="" class="key multi">
+                    <p>"</p>
+                    <p>'</p>
+                </div>
+                <div id="key1" class="key multi">
+                    <p>!</p>
+                    <p>1</p>
+                </div>
+                <div id="key2" class="key multi">
+                    <p>@</p>
+                    <p>2</p>
+                </div>
+                <div id="key3" class="key multi">
+                    <p>#</p>
+                    <p>3</p>
+                </div>
+                <div id="key4" class="key multi">
+                    <p>$</p>
+                    <p>4</p>
+                </div>
+                <div id="key5" class="key multi">
+                    <p>%</p>
+                    <p>5</p>
+                </div>
+                <div id="key6" class="key multi">
+                    <p>¨</p>
+                    <p>6</p>
+                </div>
+                <div id="key7" class="key multi">
+                    <p>&</p>
+                    <p>7</p>
+                </div>
+                <div id="key8" class="key multi">
+                    <p>*</p>
+                    <p>8</p>
+                </div>
+                <div id="key9" class="key multi">
+                    <p>(</p>
+                    <p>9</p>
+                </div>
+                <div id="key0" class="key multi">
+                    <p>)</p>
+                    <p>0</p>
+                </div>
+                <div id="" class="key  multi">
+                    <p>─</p>
+                    <p>-</p>
+                </div>
+                <div id="" class="key multi">
+                    <p>+</p>
+                    <p>=</p>
+                </div>
+                <div id="" class="key backspace"><p>⌫</p></div>
+            </div>
+            <div class="row">
+                <div id="" class="key tab"><p>Tab</p></div>
+                <div id="keyQ" class="key"><p>Q</p></div>
+                <div id="keyW" class="key"><p>W</p></div>
+                <div id="keyE" class="key"><p>E</p></div>
+                <div id="keyR" class="key"><p>R</p></div>
+                <div id="keyT" class="key"><p>T</p></div>
+                <div id="keyY" class="key"><p>Y</p></div>
+                <div id="keyU" class="key"><p>U</p></div>
+                <div id="keyI" class="key"><p>I</p></div>
+                <div id="keyO" class="key"><p>O</p></div>
+                <div id="keyP" class="key"><p>P</p></div>
+                <div id="" class="key multi acentos">
+                    <p>`</p>
+                    <p>´</p>
+                </div>
+                <div id="" class="key multi ">
+                    <p>{</p>
+                    <p>[</p>
+                </div>
+                <div id="" class="key enter1"><p>Enter</p></div>
+            </div>
+            <div class="row">
+                <div id="" class="key capslock"><p>Caps Lock</p></div>
+                <div id="keyA" class="key"><p>A</p></div>
+                <div id="keyS" class="key"><p>S</p></div>
+                <div id="keyD" class="key"><p>D</p></div>
+                <div id="keyF" class="key"><p>F</p></div>
+                <div id="keyG" class="key"><p>G</p></div>
+                <div id="keyH" class="key"><p>H</p></div>
+                <div id="keyJ" class="key"><p>J</p></div>
+                <div id="keyK" class="key"><p>K</p></div>
+                <div id="keyL" class="key"><p>L</p></div>
+                <div id="keyÇ" class="key"><p>Ç</p></div>
+                <div id="" class="key multi">
+                    <p>^</p>
+                    <p>~</p>
+                </div>
+                <div id="" class="key multi">
+                    <p>}</p>
+                    <p>]</p>
+                </div>
+                <div id="" class="key enter2"> </div>
+            </div>
+            <div class="row">
+                <div id="" class="key lshift"><p>↑</p></div>
+                <div id="" class="key">
+                    <p>|</p>
+                    <p>\</p>
+                </div>
+                <div id="keyZ" class="key"><p>Z</p></div>
+                <div id="keyX" class="key"><p>X</p></div>
+                <div id="keyC" class="key"><p>C</p></div>
+                <div id="keyV" class="key"><p>V</p></div>
+                <div id="keyB" class="key"><p>B</p></div>
+                <div id="keyN" class="key"><p>N</p></div>
+                <div id="keyM" class="key"><p>M</p></div>
+                <div id="" class="key multi left">
+                    <p><</p>
+                    <p>,</p>
+                </div>
+                <div id="" class="key multi right">
+                    <p>></p>
+                    <p>.</p>
+                </div>
+                <div id="" class="key multi ddot">
+                    <p>:</p>
+                    <p>;</p>
+                </div>
+                <div id="" class="key multi qmark">
+                    <p>?</p>
+                    <p>/</p>
+                </div>
+                <div id="" class="key rshift"><p>↑</p></div>
+                </div>
+                <div class="row">
+                    <div id="" class="key lctrl"><p>Ctrl</p></div>
+                    <div id="" class="key windows"><p>⊞</p></div>
+                    <div id="" class="key alt"><p>Alt</p></div>
+                    <div id="spacebar" class="spacebar"></div>
+                    <div id="" class="key altgr"><p>Alt Gr</p></div>
+                    <div id="" class="key fn"><p>Fn</p></div>
+                    <div id="" class="key clip"><p>&#128464;</p></div>
+                    <div id="" class="key rctrl"><p>Ctrl</p></div>
+                </div>
+            </div>
+        </div>
+        <script src="main.js"></script>
+</body>
+
+</html>
