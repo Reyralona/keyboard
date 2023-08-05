@@ -9,12 +9,14 @@ function sleep(ms) {
 
 function keyPressSound(type) {
     if (type === 'default') {
-        let rand = randomIntFromInterval(2, 2)
+        let rand = randomIntFromInterval(1, 5)
         let sound = new Audio(`sounds/keysound${rand}.mp3`)
+        sound.volume = 0.5;
         sound.play()
     }
     else if (type === 'spacebar') {
         let sound = new Audio(`sounds/spacebar.mp3`)
+        sound.volume = 0.5;
         sound.play()
     }
 }
